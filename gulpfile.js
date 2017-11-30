@@ -48,5 +48,5 @@ gulp.task('fa', function(){
 
 
 gulp.task('default', ['js', 'serve', 'fonts', 'fa']);
-
+gulp.task('build', ['js', 'fonts', 'fa']);
 
