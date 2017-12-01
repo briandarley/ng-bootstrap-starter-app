@@ -47,6 +47,7 @@ gulp.task('fa', function(){
 });
 
 
-gulp.task('default', ['js', 'serve', 'fonts', 'fa']);
-gulp.task('build', ['js', 'fonts', 'fa']);
+gulp.task('default', ['sass','js', 'serve', 'fonts', 'fa']);
+gulp.task('build', ['sass','js', 'fonts', 'fa']);
+
 
