@@ -1,4 +1,6 @@
-# Bootstrap 4 Starter Pack (BETA 4.0.0)
+# Angular and Bootstrap Starter Project
+
+## Bootstrap 4 Starter Pack (BETA 4.0.0)
 
 Includes complete Bootstrap 4.0.0-beta dev environment with gulp and sass
 
