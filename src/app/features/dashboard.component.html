@@ -1,0 +1,61 @@
+<div class="py-3 bg-dark">
+
+</div>
+<div id="wrapper" [class.toggled]="mnuCollapsed">
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <nav class="side-wrapper navbar navbar-dark bg-dark text-light align-content-start" [class.collapsed]="mnuCollapsed">
+      <a class="navbar-brand text-primary" href="#">
+       
+        <img src="../../assets/img/logo.png" class="d-block m-auto" />
+      </a>
+      
+      <ul class="navbar-nav mt-4">
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-upload"></i> <span>Create PO</span></a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-external-link-square"></i> <span>Requested</span></a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-hourglass"></i> <span>Pending</span></a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-thumbs-up"></i> <span>Approved</span></a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-thumbs-down"></i> <span>Denied</span></a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-trash-o"></i> <span>Deleted</span></a>
+        </li>
+        <li class="nav-item separator"><hr/></li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-address-book"></i> <span>Vendors</span></a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-plus-circle"></i> <span>New Vendor</span></a>
+        </li>
+        <li class="nav-item separator"><hr/></li>
+        <li class="nav-item p-2">
+          <a class="nav-link" href="#"><i class="fa fa-address-book"></i> <span>Routes</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div class="">
+      <div class="container-fluid">
+        <h1>Simple Sidebar</h1>
+        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+        <p>
+          Make sure to keep all page content within the <code>#page-content-wrapper</code>.
+        </p>
+        <a class="btn btn-secondary" (click)="onClick()">Toggle Menu</a>
+      </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->

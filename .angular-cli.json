@@ -5,13 +5,13 @@
   },
   "apps": [
     {
-      "baseHref": "./",
       "root": "src",
       "outDir": "dist",
       "assets": [
         "assets",
         "favicon.ico"
       ],
+      "baseHref": "./",
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
@@ -21,7 +21,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/font-awesome/css/font-awesome.min.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "assets/css/bootstrap.css",
         "assets/css/styles.css"
       ],
       "scripts": [
@@ -61,7 +61,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }
