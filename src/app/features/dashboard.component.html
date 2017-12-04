@@ -1,59 +1,61 @@
-<div class="py-3 bg-dark">
-
+<div class="py-2 bg-dark d-flex">
+  <div class="mr-auto flex-column align-content-center">
+    <button class="btn btn-primary btn-sm mx-xl-1" (click)="onClick()"><i class="fa fa-bars"></i> </button>
+  </div>
+  <div class="form-inline my-0 my-lg-0 d-none d-md-block ml-auto" style="width: 300px;">
+    <input class="form-control mr-sm-2" type="text" placeholder="search purchase order" aria-label="Search" [(ngModel)]="search">
+    <button class="btn btn-outline-primary my-0" type="button" (click)="onSearchPo()">Search</button>
+  </div>
 </div>
 <div id="wrapper" [class.toggled]="mnuCollapsed">
   <div class="d-flex">
     <!-- Sidebar -->
     <nav class="side-wrapper navbar navbar-dark bg-dark text-light align-content-start" [class.collapsed]="mnuCollapsed">
-      <a class="navbar-brand text-primary" href="#">
+      <a class="navbar-brand text-primary" routerLink="/dashboard">
        
         <img src="../../assets/img/logo.png" class="d-block m-auto" />
       </a>
       
       <ul class="navbar-nav mt-4">
         <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-upload"></i> <span>Create PO</span></a>
+          <a class="nav-link" routerLink="/purchase-order"><i class="fa fa-upload"></i> <span>Create PO</span></a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-external-link-square"></i> <span>Requested</span></a>
+          <a class="nav-link" routerLink="/purchase-orders/requested"><i class="fa fa-external-link-square"></i> <span>Requested</span></a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-hourglass"></i> <span>Pending</span></a>
+          <a class="nav-link" routerLink="/purchase-orders/pending"><i class="fa fa-hourglass"></i> <span>Pending</span></a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-thumbs-up"></i> <span>Approved</span></a>
+          <a class="nav-link" routerLink="/purchase-orders/approved"><i class="fa fa-thumbs-up"></i> <span>Approved</span></a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-thumbs-down"></i> <span>Denied</span></a>
+          <a class="nav-link" routerLink="/purchase-orders/denied"><i class="fa fa-thumbs-down"></i> <span>Denied</span></a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-trash-o"></i> <span>Deleted</span></a>
-        </li>
-        <li class="nav-item separator"><hr/></li>
-        <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-address-book"></i> <span>Vendors</span></a>
-        </li>
-        <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-plus-circle"></i> <span>New Vendor</span></a>
+          <a class="nav-link" routerLink="/purchase-orders/deleted"><i class="fa fa-trash-o"></i> <span>Deleted</span></a>
         </li>
         <li class="nav-item separator"><hr/></li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#"><i class="fa fa-address-book"></i> <span>Routes</span></a>
+          <a class="nav-link" routerLink="/vendors"><i class="fa fa-address-book"></i> <span>Vendors</span></a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" routerLink="/vendor"><i class="fa fa-plus-circle"></i> <span>New Vendor</span></a>
+        </li>
+        <li class="nav-item separator"><hr/></li>
+        <li class="nav-item p-2">
+          <a class="nav-link" routerLink="/routes"><i class="fa fa-address-book"></i> <span>Routes</span></a>
         </li>
       </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
     <!-- Page Content -->
-    <div class="">
-      <div class="container-fluid">
-        <h1>Simple Sidebar</h1>
-        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-        <p>
-          Make sure to keep all page content within the <code>#page-content-wrapper</code>.
-        </p>
-        <a class="btn btn-secondary" (click)="onClick()">Toggle Menu</a>
-      </div>
+    
+    <div class="main-content container-fluid pb-5">
+      
+      <router-outlet></router-outlet>
     </div>
+    
   </div>
   <!-- /#page-content-wrapper -->
 

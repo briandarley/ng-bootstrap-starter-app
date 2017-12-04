@@ -6,7 +6,7 @@ import { FeaturesModule } from './features/features.module';
 import { LandingComponent } from './landing.component';
 import { RouterModule } from '@angular/router';
 import { Error404Component } from './error-404.component';
-
+import { SharedModule } from './shared.module';  
 
 @NgModule({
   declarations: [
@@ -19,11 +19,15 @@ import { Error404Component } from './error-404.component';
     BrowserModule,
     AppRoutingModule,
     FeaturesModule,
+    SharedModule,
     RouterModule.forRoot([
+      
+     
       { path: 'landing', component: LandingComponent },
       { path: '', redirectTo: 'landing', pathMatch: 'full' },
       { path: '**', component: Error404Component}
-    ])
+    ]),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

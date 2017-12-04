@@ -1,0 +1,12 @@
+node_modules\bootstrap\scss\_variables.scss
+
+//line 48
+$burntOrange: #d75b4a !default;
+
+//line 65
+$colors: map-merge((
+  "burnt-orange": $burntOrange,
+), $colors);
+
+//line 69
+$primary:       $burntOrange !default;

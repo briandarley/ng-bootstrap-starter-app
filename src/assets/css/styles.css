@@ -5,3 +5,13 @@ $dark-overlay: rgba(0,0,0,0.7);
 $font-size: 30px;*/
 html {
   height: 100%; }
+
+.bg-secondary {
+  background: rgba(149, 199, 68, 0.6);
+  color: #317386; }
+
+.card .card-header {
+  border: 1px solid #317386 !important;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px; }

@@ -3,11 +3,23 @@ $font-color: #fff;
 $primary-color: #008ed6;
 $dark-overlay: rgba(0,0,0,0.7);
 $font-size: 30px;*/
+$darkTeal:#317386 ;
 
 
-html
-{
+html {
   height: 100%;
 }
 
 
+.bg-secondary {
+  background: rgba(149, 199, 68, 0.6);
+  color: $darkTeal;
+}
+.card {
+  .card-header {
+    border: 1px solid $darkTeal !important;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}

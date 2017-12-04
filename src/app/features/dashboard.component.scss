@@ -5,11 +5,11 @@ $min-width: 70px;
 
 
 #wrapper {
-  height: 100vh;
+
 
   .d-flex {
-    height: 100%;
-    min-height: 700px;
+   
+    
 
     .navbar-brand {
       white-space: normal;
@@ -99,6 +99,10 @@ $min-width: 70px;
     background: rgba(215, 91, 74, 0.44);
     color: $gray-100;
   }
+}
+.main-content {
+  min-height: 100vh;
+  background: #808080;
 }
 
 #wrapper, #wrapper .side-wrapper,
